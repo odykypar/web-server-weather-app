@@ -38,7 +38,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text.',
+        helpText: 'Get the weather forecast for any location at the Weather tab.',
         title: 'Help',
         name: 'Odysseas Kyparissis'
     })
@@ -86,7 +86,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Odysseas Kyparissis',
         errorMessage: 'Help article not found.'
     })
 })
@@ -94,7 +94,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Odysseas Kyparissis',
         errorMessage: 'Page not found.'
     })
 })
